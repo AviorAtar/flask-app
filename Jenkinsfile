@@ -5,7 +5,8 @@ pipeline {
         stage('Hello World') {
             steps {
                 script {
-                    echo 'Hello sdgWorld'
+                    echo 'Hello World' 
+                    echo 'hi'
                 }
             }
         }
