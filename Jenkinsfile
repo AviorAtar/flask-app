@@ -8,6 +8,7 @@ pipeline {
                     echo 'Hello World' 
                     echo 'hi'
                     echo 'hello'
+                    echo 'world'
                 }
             }
         }
