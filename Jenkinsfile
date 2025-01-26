@@ -25,10 +25,10 @@ pipeline {
             steps {
                 script {
                     sh ' echo "deploy" '
-                    sh ' aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 992382545251.dkr.ecr.us-east-1.amazonaws.com '               
-                    sh ' docker build -t fredrick-repository . '
-                    sh ' docker tag fredrick-repository:latest 992382545251.dkr.ecr.us-east-1.amazonaws.com/fredrick-repository:latest '
-                    sh ' docker push 992382545251.dkr.ecr.us-east-1.amazonaws.com/fredrick-repository:latest '
+                    sh ' aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/c0m6s3p2 '               
+                    sh ' docker build -t avior_flask-app-repository . '
+                    sh ' docker tag avior_flask-app-repository:latest public.ecr.aws/c0m6s3p2/avior_flask-app-repository:latest '
+                    sh ' docker push public.ecr.aws/c0m6s3p2/avior_flask-app-repository:latest '
                 
                 
                 
