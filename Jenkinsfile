@@ -7,6 +7,7 @@ pipeline {
                 script {
                     echo 'Hello World' 
                     echo 'hi'
+                    echo 'hello'
                 }
             }
         }
